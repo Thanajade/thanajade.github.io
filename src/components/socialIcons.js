@@ -4,7 +4,7 @@ import FontAwesome from 'react-fontawesome'
 
 const Icon = ({ name, href }) => (
   <a href={href}>
-    <FontAwesome name={name} />
+    <FontAwesome name={name} size="lg"/>
   </a>
 )
 

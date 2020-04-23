@@ -49,22 +49,19 @@ class Footer extends React.Component {
           <Box px={2} width={[1, 1 / 2, 1 / 3, 1 / 6]}>
             <Flex flexDirection="column">
               <Box>
-                <Name block />
-              </Box>
-              <Box>
                 <SocialIconsStyled
                   icons={[
                     {
                       name: 'twitter',
-                      href: 'https://twitter.com/darren_britton',
+                      href: 'https://twitter.com/thanajade_d',
                     },
                     {
                       name: 'github-alt',
-                      href: 'https://github.com/darrenbritton',
+                      href: 'https://github.com/Thanajade',
                     },
                     {
                       name: 'linkedin',
-                      href: 'https://ie.linkedin.com/in/darrenbritton',
+                      href: 'https://www.linkedin.com/in/thanajade/',
                     },
                   ]}
                 />
@@ -73,14 +70,6 @@ class Footer extends React.Component {
           </Box>
           <Box width={[1, 1 / 2, 1 / 3, 1 / 6]}>
             <Flex justifyContent="center" flexDirection="column">
-              <Box>
-                <FooterText>
-                  <h4>
-                    Made with ❤️ using{' '}
-                    <a href="https://www.gatsbyjs.org/">GatsbyJS</a>
-                  </h4>
-                </FooterText>
-              </Box>
               <CenteredButtonBox>
                 <Button
                   onClick={() => {
@@ -96,15 +85,6 @@ class Footer extends React.Component {
             </Flex>
           </Box>
           <Box width={[4 / 5, 1 / 2, 1 / 3, 1 / 6]} pt={2}>
-            <Flex alignItems="center" justifyContent="center">
-              <GalleryContainer>
-                <FlickrLightbox
-                  api_key="1b4e5b0203fab0d5731afe68f0a543e1"
-                  user_id="132343752@N06"
-                  limit={8}
-                />
-              </GalleryContainer>
-            </Flex>
           </Box>
         </Flex>
       </Base>

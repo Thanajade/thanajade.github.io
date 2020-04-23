@@ -170,6 +170,37 @@ const Item = styled.div`
   `}
 `
 
+const Image = styled.div`
+width: 40%;
+margin: 0 auto;
+border: none;
+border-bottom: 1px solid #eee;
+h6 {
+  letter-spacing: 2px;
+  font-weight: 700;
+  padding-top: 6px;
+}
+span,
+p {
+  font-size: 13px;
+  line-height: 24px;
+  color: #666;
+}
+span {
+  opacity: 0.75;
+  float: right;
+  text-transform: uppercase;
+}
+p {
+  margin-bottom: 24px;
+  opacity: 0.5;
+}
+${media.xs`
+  width: 90%;
+
+`}
+`
+
 export default props => {
   const content = (
     <Content>
@@ -208,60 +239,50 @@ export default props => {
         <Title>About Me</Title>
         <Flex alignItems="center" flexDirection="column">
           <Box px={2} width={[1, 1 / 2]}>
-            <p>
-              Currently working as a software engineer at{' '}
-              <a href="https://shutterstock.com">Shutterstock</a> focusing on
-              the editorial content platform. As far as my work goes I've
-              probably worn every hat on the rack, most notable being Web
-              Developer, Software Engineer and Photographer. Don’t let my clean
-              lines and weakness for Swiss type fool you; My work has been
-              pretty diverse and enjoyable. For more information about me follow
-              one of my social media links above or at the bottom of the page.
+            <p>I am working as a senior software engineer at 
+              <a href="https://www.ascendcorp.com/"> Ascend Group </a>
+              with 10 years of experience in end to end software development specialized in Modern web app technologies, 
+              Software testing, Custom business app implementation.
+              For more information please follow my social media linked above.
             </p>
-          </Box>
-          <Box px={2} width={180}>
-            <Img
-              sizes={
-                props.data.allFile
-                  ? props.data.allFile.edges[0].node.childImageSharp.sizes
-                  : {}
-              }
-            />
           </Box>
         </Flex>
       </Section>
-      <Title small>Portfolio</Title>
+      <Title>Portfolio</Title>
       <a id="portfolio">Portfolio</a>
       <Portfolio items={props.data.allMarkdownRemark.edges} />
       <a id="experience">Experience</a>
       <Section center dark>
-        <h4>Experience</h4>
-        <span>Where I've worked.</span>
+        <h4>Work Experience</h4>
         <Item>
-          <span>MAY 2018 - CURRENT</span>
-          <h6>SHUTTERSTOCK</h6>
+          <span>Dec 2018 - CURRENT</span>
+          <h6><a href="https://www.pantavanij.com/" target="_blank">Pantavanij</a></h6>
+          <p>Senior Software Engineer</p>
+        </Item>
+        <Item>
+          <span>Jun 2017 - Nov 2018</span>
+          <h6><a href="https://www.skooldio.com/" target="_blank">Skooldio</a></h6>
           <p>Software Engineer</p>
         </Item>
         <Item>
-          <span>JUNE 2016 - APRIL 2018</span>
-          <h6>SAP IRELAND</h6>
+          <span>Aug 2013 - Jun 2015</span>
+          <h6><a href="https://www.agoda.com/" target="_blank">Agoda</a></h6>
+          <p>Software Developer</p>
+        </Item>
+        <Item>
+          <span>Jul 2010 - Aug 2013</span>
+          <h6><a href="https://www.thalamo.com/" target="_blank">Thalamo</a></h6>
           <p>Full Stack Developer</p>
         </Item>
         <Item>
-          <span>FEB 2015 - AUG 2015</span>
-          <h6>SAP IRELAND</h6>
-          <p>Support Engineer</p>
-        </Item>
-        <Item>
-          <span>JAN 2014 - JULY 2014</span>
-          <h6>ST DECLAN'S COLLEGE</h6>
-          <p>Full Stack Developer</p>
+          <span>July 2009 - June 2010</span>
+          <h6><a href="https://www.microsoft.com/th-th" target="_blank">Microsoft (Thailand)</a></h6>
+          <p>Technology Specialist</p>
         </Item>
       </Section>
-      <a id="tech">Tech</a>
+      <a id="tech">Specialized Technology</a>
       <Section center>
-        <h4>Tech</h4>
-        <span>Technologies I enjoy working with.</span>
+        <h4>Specialized Technology</h4>
         <Showcase
           images={
             props.data.allImageSharp ? props.data.allImageSharp.edges : []
@@ -271,36 +292,43 @@ export default props => {
       <a id="education">Education</a>
       <Section dark center>
         <h4>EDUCATION</h4>
-        <span>Education I've recieved.</span>
         <Item>
-          <span>2012 - 2016</span>
-          <h6>BSC COMPUTER SCIENCE (1st Class Honours)</h6>
-          <p>Dublin Institute of Technology</p>
+          <span>2013 - 2015</span>
+          <h6>Master of Business Administration (MBA)</h6>
+          <p>Chulalongkorn University</p>
         </Item>
         <Item>
-          <span>2006 - 2012</span>
-          <h6>SECONDARY EDUCATION</h6>
-          <p>Saint Declan's College</p>
+          <span>2005 - 2009</span>
+          <h6>Bachelor of Engineering (Computer Engineering) 1st Class Honors</h6>
+          <p>Chiang Mai University</p>
         </Item>
       </Section>
-      <a id="honoursAndAwards">Honours & Awards</a>
+      <a id="certifications">Licenses and Certifications</a>
       <Section center>
-        <h4>HONORS & AWARDS</h4>
-        <span>A list of honors and awards I have recieved for my work.</span>
+        <h4>Licenses and Certifications</h4>
         <Item>
-          <span>2016</span>
-          <h6>BEST PROJECT (IN THE DIT PROJECT FAIR)</h6>
-          <p>SAP</p>
+          <span>Nov 2016</span>
+          <h6>AWS - Solution Architect Associate <a href="https://www.certmetrics.com/amazon/public/badge.aspx?i=1&t=c&d=2019-11-22&ci=AWS01122080">AWS01122080</a></h6>
+          <p>Amazon Web Services</p>
         </Item>
         <Item>
-          <span>2014</span>
-          <h6>GAMES STUDIO IRELAND CHALLENGE: BEST IN ORIGINAL STORY</h6>
-          <p>Games Fleadh</p>
+          <span>May 2018</span>
+          <h6>Investment Consultant</h6>
+          <p>The Securities and Exchange Commission</p>
         </Item>
         <Item>
-          <span>2010</span>
-          <h6>ACCESS ACCENTURE ACHIEVEMENT AWARD</h6>
-          <p>Accenture</p>
+          <span>Nov 2016</span>
+          <h6>Independent insurance agent</h6>
+          <p>Office of Insurance Commission</p>
+        </Item>
+      </Section>
+      <a id="honors">Accomplishments</a>
+      <Section dark center>
+        <h4>ACCOMPLISHMENT</h4>
+        <Item>
+          <span>Nov 2008</span>
+          <h6>First runner-up Network Security Contest 2008</h6>
+          <p>Office of the higher education commission ,The Communication Solution Co., Ltd</p>
         </Item>
       </Section>
     </Content>

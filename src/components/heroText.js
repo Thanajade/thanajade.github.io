@@ -15,7 +15,7 @@ const StyledTypist = styled(Typist)`
   font-family: 'Raleway';
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 25%;
   ${media.md`
   left: 25%;
   top: 40%;
@@ -46,22 +46,14 @@ class HeroText extends React.Component {
       )
     }
     return (
-      <StyledTypist cursor={{ show: false }} {...this.props}>
-        <strong>I Make</strong> Websites
+      <StyledTypist cursor={{ show: true }} {...this.props}>
+        <strong>I Build</strong> Websites
         <Typist.Backspace count={9} delay={300} />
         <span> Web Apps</span>
-        <Typist.Backspace count={9} delay={300} />
-        <span> Video Games</span>
-        <Typist.Backspace count={12} delay={300} />
-        <span> Poor Life Decisions</span>
-        <Typist.Delay ms={100} />
-        <span>.</span>
-        <Typist.Delay ms={200} />
-        <span>.</span>
-        <Typist.Delay ms={300} />
-        <span>.</span>
-        <Typist.Backspace count={29} delay={10} />
-        <strong>But Mostly Just</strong> Cool Web Stuff
+        <Typist.Backspace count={8} delay={300} />
+        <span> Mobile Apps</span>
+        <Typist.Backspace count={21} delay={300} />
+        <strong>I BUILD </strong> Online presence
       </StyledTypist>
     )
   }

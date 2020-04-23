@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Darren Britton`
+    title: `Thanajade Dechananthachai`
   },
   plugins: [
     {
@@ -67,8 +67,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "Darren Britton Portfolio",
-        short_name: "Darren Britton",
+        name: "Thanajade Dechananthachai Portfolio",
+        short_name: "Thanajade Dechananthachai",
         start_url: "/",
         background_color: "#292929",
         theme_color: "#405375",

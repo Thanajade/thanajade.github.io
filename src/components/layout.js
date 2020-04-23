@@ -36,7 +36,7 @@ const PageBase = ({ location, children }) => {
     <Body>
       <GlobalStyle />
       <Helmet
-        title="Darren Britton"
+        title="Thanajade Dechananthachai"
         meta={[
           { name: 'description', content: 'portfolio' },
           { name: 'keywords', content: 'darren, britton, portfolio' },
