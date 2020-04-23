@@ -39,7 +39,7 @@ const PageBase = ({ location, children }) => {
         title="Thanajade Dechananthachai"
         meta={[
           { name: 'description', content: 'portfolio' },
-          { name: 'keywords', content: 'darren, britton, portfolio' },
+          { name: 'keywords', content: 'thanajade, dechananthachai, portfolio' },
           { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         ]}
       />
