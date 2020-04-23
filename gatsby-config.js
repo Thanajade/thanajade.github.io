@@ -61,7 +61,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: `UA-47904062-1`
+        trackingId: `UA-164370612-1`
       }
     },
     {
@@ -78,7 +78,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sentry",
       options: {
-        dsn: "https://23d8e0b792d442d29d0b4344a79ef87d@sentry.io/170806"
+        dsn: "https://470f8ef5a680401fb727d7557a8760ae@o382219.ingest.sentry.io/5210759"
       }
     }
   ]

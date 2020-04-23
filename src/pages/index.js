@@ -222,15 +222,15 @@ export default props => {
         icons={[
           {
             name: 'twitter',
-            href: 'https://twitter.com/darren_britton',
+            href: 'https://twitter.com/thanajade_d',
           },
           {
             name: 'github-alt',
-            href: 'https://github.com/darrenbritton',
+            href: 'https://github.com/thanajade',
           },
           {
             name: 'linkedin',
-            href: 'https://ie.linkedin.com/in/darrenbritton',
+            href: 'https://www.linkedin.com/in/thanajade/',
           },
         ]}
       />
@@ -378,7 +378,7 @@ export const pageQuery = graphql`
         node {
           id
           childImageSharp {
-            sizes(maxWidth: 300, grayscale: true) {
+            sizes(maxWidth: 300, grayscale: false) {
               ...GatsbyImageSharpSizes_tracedSVG
             }
           }
@@ -389,7 +389,7 @@ export const pageQuery = graphql`
       edges {
         node {
           childImageSharp {
-            sizes(maxWidth: 200, grayscale: true) {
+            sizes(maxWidth: 200, grayscale: false) {
               ...GatsbyImageSharpSizes_tracedSVG
             }
           }
