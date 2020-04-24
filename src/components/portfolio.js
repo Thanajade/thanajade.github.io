@@ -129,7 +129,7 @@ class Portfolio extends React.Component {
   constructor(props) {
     super(props)
 
-    this.state = { items: [], viewAll: false }
+    this.state = { items: [], viewAll: true }
   }
 
   componentWillRecievedProps(newProps, oldProps) {

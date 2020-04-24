@@ -1,7 +1,7 @@
 ---
 title: "Agoda Secret Deals Hotel"
 date: "2015-03-23"
-tags: ["Agoda", "Hotel", "Booking", "Secret Deals""]
+tags: ["Agoda", "Hotel", "Booking", "Secret Deals"]
 image: './images/apo-logo-city-page-bottom.png'
 ---
 
